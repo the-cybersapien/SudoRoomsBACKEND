@@ -1,6 +1,12 @@
 # SUDOROOMS
 **Backend API For the Sudo Rooms Application at Clash Hacks 2k17**
 
+## Team Tricode
+
+1. [Aditya Aggarwal](https://github.com/the-cybersapien/)
+2. [Harshit Budhraja](https://github.com/harshitbudhraja/)
+3. [Nikhil Bansal](https://github.com/nikhilbansal97/)
+
 ## **Problem Statement**
 
 * Whenever we stay in a hotel, there's always a concern in every customer's mind whether or not their room will be accessed(say, by the cleaning/service staff) in their absence.
@@ -10,7 +16,21 @@
 
 Thus, there is a solution that can give the customers their satisfaction and their peace of mind, as well as the hotel staff, their valid proof of honesty.
 
-**SUDOROOMS** is a *keyless* door-lock management architecture that gives weight on TOTAL PRIVACY of the customer.
+**SUDOROOMS** is a *keyless* door-lock management architecture that gives weight on TOTAL PRIVACY to the customer.
+
+## **FEATURES**
+
+* Works on local network connection. That means, the door can be unlocked by the customer as long as he is in any part of the hotel where he's able to connect to their network.
+* Everytime the room is accessed, there is an SMS received to the customer's registered mobile number.
+* When the service staff wants to access the room, a notification is sent to the customer and the access is only granted if the customer accepts it.
+* Emergency calls can be placed to some pre-registered users. (Using exotel API)
+
+NOTE:- We were supposed to use Arduino with a wifi module but as it was not working, we had to improvise and reduce our technology track to CONNECTED DEVICES.
+
+## **FUTURE PROSPECTS**
+
+* Instead of using the app, we can use PWA(Progressive WebApps) and thus, there is a good use of the Letreach API too :p
+* We have to denote a way of communicating an arduino with the server.
 
 ## Mini-Documentation
 
