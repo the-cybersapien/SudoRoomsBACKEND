@@ -1,5 +1,3 @@
-[![GMail: Harshit Budhraja](https://img.shields.io/badge/contact-harshitbudhraja-blue.svg?style=flat)](mailto: harshitbudhraja1301@gmail.com)
-[![Github: the-cybersapien](https://img.shields.io/badge/contact-thecybersapien-blue.svg?style=flat)](https://github.com/the-cybersapien/)
 [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)<br>
 [![forthebadge](http://forthebadge.com/badges/uses-git.svg)](http://forthebadge.com)
 [![forthebadge](http://forthebadge.com/badges/built-by-developers.svg)](http://forthebadge.com)
