@@ -1,0 +1,45 @@
+.room-card.mdl-card {
+    width: 175px;
+    height: auto;
+    margin: 10px;
+}
+
+.room-card-locked.mdl-card {
+    background: #f44336;
+}
+
+.room-card-unlocked.mdl-card {
+    background: #00c853;
+}
+
+.room-card > .mdl-card__actions {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.room-card > .mdl-card__title {
+    align-items: flex-start;
+}
+
+.room-card > .mdl-card__title > h4 {
+    margin-top: 0;
+}
+
+.room-card > .mdl-card__actions {
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.room-card > .mdl-card__actions > .material-icons {
+    padding-right: 10px;
+}
+
+.room-card > .mdl-card__title,
+.room-card > .mdl-card__actions,
+.room-card > .mdl-card__actions > .mdl-button {
+    color: #fff;
+}
+
+.room-card > .room-card__name {
+    color: #fff;
+}
