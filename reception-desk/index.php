@@ -20,7 +20,7 @@
   <div class="col-3">
     <label>
       Name
-      <input placeholder="Customer's full name" id="name" name="name" tabindex="1">
+      <input placeholder="Customer's full name" id="name" name="name" required minlength="5" maxlength="30" pattern="[A-Z a-z]+" tabindex="1">
     </label>
   </div>
   <!--<div class="col-2">
@@ -33,7 +33,7 @@
   <div class="col-3">
     <label>
       Mobile Number
-      <input placeholder="Customer's contact number" id="phone" name="phone" tabindex="3">
+      <input placeholder="Customer's contact number" id="phone" name="phone" tabindex="3" required maxlength="10" minlength="10" pattern="[0-9]+">
     </label>
   </div>
   <div class="col-3">
