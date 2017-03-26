@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>
+setTimeout(function() {
+    location.reload();
+},5000);
+</script>
     <meta charset="UTF-8">
 
-    <meta http-equiv="refresh" content="2"><title>Sudo Rooms</title>
+    <!--<meta http-equiv="refresh" content="5">--><title>Sudo Rooms</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="res/material.min.css">
     <script src="res/material.min.js"></script>

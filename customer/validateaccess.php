@@ -1,4 +1,5 @@
 <?php
+	error_reporting(0);
 	$key=$_GET['key'];
 	$con = mysqli_connect("localhost","root","");
 	mysqli_select_db($con,"sudorooms");
@@ -13,7 +14,7 @@
 	}
 	else
 	{
-		echo ("{\"Room\": '".$row['RoomAllotted']."',\"Name\": '".$row['Name']."'}");
+		echo ("{\"Room\": '".$row['RoomAllotted']."',\"Name\": '".$row['Name']."',\"CId\": '".$row['CId']."',\"Mobile\": '".$row['Mobile']."'}");
 	}
 	
 ?>

@@ -51,7 +51,7 @@
   <div class="col-3">
     <label>
       Room Choice
-      <select id="room" name="room" tabindex="5">
+      <select id="room" name="room" tabindex="5" required>
         <!--<option>5-15 hrs per week</option>
         <option>15-30 hrs per week</option>
         <option>30-40 hrs per week</option>-->
