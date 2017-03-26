@@ -6,6 +6,8 @@
 # SUDOROOMS
 **Backend API For the Sudo Rooms Application at Clash Hacks 2k17**
 
+Related repositories : For the android app source code, do check out our [Android Repo](https://github.com/the-cybersapien/SudoRoomsANDROID)
+
 ## Team Tricode
 
 1. [Aditya Aggarwal](https://github.com/the-cybersapien/)
