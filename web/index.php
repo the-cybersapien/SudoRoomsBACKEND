@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
 
-    <meta http-equiv="refresh" content="30"><title>Sudo Rooms</title>
+    <meta http-equiv="refresh" content="2"><title>Sudo Rooms</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="res/material.min.css">
     <script src="res/material.min.js"></script>
@@ -24,13 +24,22 @@
 
         <div class="mdl-grid">
 
-            <div class="room-card room-card-unlocked staffaccess mdl-cell mdl-cell--12-col mdl-card mdl-shadow--2dp">
+            <div class="room-card room-card-unlocked mdl-cell mdl-cell--6-col mdl-card mdl-shadow--2dp">
                 <div class="mdl-card__title mdl-card--expand">
                     <h4 id="room_number">
-                        Room Number 000
+                        OPEN ROOMS
                     </h4>
                 </div>
             </div>
+            <div class="room-card room-card-locked mdl-cell mdl-cell--6-col mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title mdl-card--expand">
+                    <h4 id="room_number">
+                        CLOSED ROOMS
+                    </h4>
+                </div>
+            </div>
+           </div>
+            <div class="mdl-grid">
 
             <?php
             $content = file_get_contents('http://192.168.2.214/sudorooms/staff/getroomdata.php');
@@ -39,20 +48,24 @@
             foreach ($jArray as $item) {
                 $room_num = $item['RoomNum'];
                 $isOpen = $item['isOpen'];
-                if($isOpen == "yes" && $staffaccess = "yes"){
-                    echo "<div class=\"room-card room-card-unlocked-staff-access mdl-cell mdl-cell--12-col mdl-card mdl-shadow--2dp\">";
-                } elseif ($isOpen == "yes") {
-                    # code...
+                if($isOpen == 'yes'){
                     echo "<div class=\"room-card room-card-unlocked mdl-cell mdl-cell--12-col mdl-card mdl-shadow--2dp\">";
-                } else {
+                } 
+                else {
                     echo "<div class=\"room-card room-card-locked mdl-cell mdl-cell--12-col mdl-card mdl-shadow--2dp\">";
                 }
                 echo "<div class=\"mdl-card__title mdl-card--expand\">";
                 echo "<h4 id=\"room_number\">";
-                echo "Room Number $room_num";
+                echo "Room #$room_num";
                 echo "</h4>";
-                echo "</div>";
-                echo "</div>";
+		echo "</div>";
+		echo "</div>";
+		if($room_num%10==0)
+		{
+			echo "</div>";
+			echo "<div class=\"mdl-grid\">";
+		}
+			
             }
             echo "</div>";
             ?>

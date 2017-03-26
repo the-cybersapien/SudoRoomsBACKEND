@@ -8,8 +8,8 @@
 	$records = mysqli_num_rows($result);
 	if($records==0)
 	{
-		//header("HTTP/1.0 404 Access Key not found");
-		echo ("{\"Room\": N.A.,\"Name\": N.A.}");
+		header("HTTP/1.0 404 Access Key not found");
+		//echo ("{\"Room\": N.A.,\"Name\": N.A.}");
 	}
 	else
 	{
