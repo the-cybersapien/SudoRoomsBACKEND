@@ -13,7 +13,7 @@
   <div id="wrapper">
   
   <h1>Reception Desk</h1><div class="col-submit">
-    <button class="submitbtn" onclick="resetdata.php">Reset Data</button>
+    <a href="resetdata.php"><button class="submitbtn">Reset Data</button></a>
   </div>
   
   <form id="RegisterForm" action="registeruser.php" method="post">
