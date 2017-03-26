@@ -26,8 +26,8 @@ function generateAccessKey($length = 10) {
 
           $post_data = array(
             'From' => '09243422233',
-            'To' => '$mobile',
-            'Body' => 'Hello, your access key is: $access_key');
+            'To' => $mobile,
+            'Body' => 'Hello, your access key is: ' . $access_key);
 
           $exotel_sid = "cybersapien";
           $exotel_token = "0b83f4803c68e21290f19eb534d9b427937db916";
@@ -35,7 +35,7 @@ function generateAccessKey($length = 10) {
           $url = $url = "https://".$exotel_sid.":".$exotel_token."@twilix.exotel.in/v1/Accounts/".$exotel_sid."/Sms/send";
 
           $ch = curl_init();
-          curl_setopt($ch, CULROPT_VERBOSE, 1);
+          curl_setopt($ch, CURLOPT_VERBOSE, 1);
 
           curl_setopt($ch, CURLOPT_URL, $url);
           curl_setopt($ch, CURLOPT_POST, 1);

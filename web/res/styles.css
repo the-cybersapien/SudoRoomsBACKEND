@@ -1,15 +1,21 @@
-.room-card.mdl-card {
-    width: 175px;
+.room-card {
+    max-width: 165px;
+    width: auto;
     height: auto;
+    max-height: 00px;
     margin: 10px;
 }
 
-.room-card-locked.mdl-card {
+.room-card-locked {
     background: #f44336;
 }
 
-.room-card-unlocked.mdl-card {
+.room-card-unlocked {
     background: #00c853;
+}
+
+.room-card-unlocked-staff-access{
+    background-color: #023;
 }
 
 .room-card > .mdl-card__actions {
