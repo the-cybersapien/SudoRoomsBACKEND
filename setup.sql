@@ -14,10 +14,12 @@ CREATE TABLE  `sudorooms`.`customer` (
 `CId` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 `Name` VARCHAR( 100 ) NOT NULL ,
 `CheckIn` TIMESTAMP( 6 ) DEFAULT 0,
-`RoomAllotted` VARCHAR( 2 ) NOT NULL,
+`RoomAllotted` VARCHAR( 3 ) NOT NULL,
 `CheckOut` TIMESTAMP( 6 ) DEFAULT 0,
 FOREIGN KEY (`RoomAllotted`) REFERENCES `sudorooms`.`room`(`RoomNum`)
 ) ENGINE = MYISAM COMMENT =  'Storing the customer information';
+ALTER TABLE `customer` ADD `Mobile` VARCHAR(10) NULL DEFAULT NULL AFTER `CheckOut`;
+ALTER TABLE `customer` ADD `AccessKey` VARCHAR(10) NULL DEFAULT NULL AFTER `Mobile`;
 
 INSERT INTO `sudorooms`.`room`(`RoomNum`, `isFree`, `servicereq`, `isOpen`, `staffaccess`) VALUES('01','yes', 'NA', 'no', 'yes');
 INSERT INTO `sudorooms`.`room`(`RoomNum`, `isFree`, `servicereq`, `isOpen`, `staffaccess`) VALUES('02','yes', 'NA', 'no', 'yes');
