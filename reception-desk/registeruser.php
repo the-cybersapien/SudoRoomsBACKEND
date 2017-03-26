@@ -49,7 +49,7 @@ function generateAccessKey($length = 10) {
           $http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 
           curl_close($ch);
-          echo "Response = ".print_r($http_result);
+          //echo "Response = ".print_r($http_result);
 
 					header("Location: /sudorooms/reception-desk/");
 					die();
