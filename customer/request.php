@@ -63,6 +63,8 @@ function verify_access($access,$room)
 	send_open_signal($room);
 }
 
+/*************************************************************************************************************************/	
+	
 	error_reporting(0);
 	$room_number = NULL;
 	$action = NULL;
